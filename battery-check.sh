@@ -26,7 +26,7 @@ echo "Battery Health:       ${health}%"
 
 # Compare and print with color
 if (( health_int < THRESHOLD )); then
-  echo -e "Status:          ${RED}FAIL${NC}"
+  echo -e "Status:            ${RED}FAIL${NC}"
 else
-  echo -e "Status:          ${GREEN}PASS${NC}"
+  echo -e "Status:            ${GREEN}PASS${NC}"
 fi
