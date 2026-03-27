@@ -6,7 +6,7 @@ RED="\033[0;31m"
 NC="\033[0m"
 THRESHOLD=80
 
-echo "Starting battery check..."
+echo "Starting battery check...\n"
 
 # AppleSmartBattery as XML
 BATTERY_XML=$(ioreg -rc AppleSmartBattery -a)
@@ -26,7 +26,7 @@ echo "Battery Health:       ${health}%"
 
 # Compare and print with color
 if (( health_int < THRESHOLD )); then
-  echo -e "Status:            ${RED}FAIL${NC}"
+  echo -e "Status:              ${RED}FAIL${NC}\n"
 else
-  echo -e "Status:            ${GREEN}PASS${NC}"
+  echo -e "Status:              ${GREEN}PASS${NC}\n"
 fi
