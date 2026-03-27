@@ -1,7 +1,7 @@
 # macOS Battery Health Check
 A shell script to calculate the battery health of Mac laptops
 
-![screenshot](/screenshot.png)
+![mac-check-screenshot](/mac-check-screenshot.png)
 
 ## Overview
 This project automates battery health checks on macOS using native operating system tools. The goal was to reduce manual steps, speed up validation, and make the process more consistent.
