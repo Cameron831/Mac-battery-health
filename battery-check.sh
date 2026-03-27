@@ -6,7 +6,8 @@ RED="\033[0;31m"
 NC="\033[0m"
 THRESHOLD=80
 
-printf "Starting battery check...\n"
+echo "Starting battery check..."
+echo
 
 # AppleSmartBattery as XML
 BATTERY_XML=$(ioreg -rc AppleSmartBattery -a)
